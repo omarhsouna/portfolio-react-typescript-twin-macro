@@ -28,7 +28,8 @@ function Home({ setActiveTab }: Props) {
         </span>
         <h1 tw="text-white text-4xl md:text-[54px] leading-10 md:leading-[68px] font-black mb-5">
           Hi, I&apos;m Omar Hsouna
-          <br /> <div tw="text-secondary">JS Developer.</div>
+          <br />
+          <div tw="text-secondary">JS Developer.</div>
         </h1>
         <h2 tw="text-3xl md:text-[54px] text-white font-bold">
           {" "}
