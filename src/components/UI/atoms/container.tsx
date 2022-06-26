@@ -17,7 +17,7 @@ function Container({ children, setActiveTab, activeTab }: Props) {
     }
   }, [onScreen]);
   return (
-    <div tw="bg-primary" id={activeTab.toLocaleLowerCase()}>
+    <div ref={ref} tw="bg-primary" id={activeTab.toLocaleLowerCase()}>
       <div tw="max-w-[450px] sm:max-w-[720px] md:max-w-[960px] xl:max-w-[1260px] md:w-full mx-auto py-16 md:py-32 px-3.5">
         {children}
       </div>
