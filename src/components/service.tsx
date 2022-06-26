@@ -6,43 +6,49 @@ interface Props {
 }
 const items = [
   {
+    id: "1",
     iconName: "Stratagy",
     title: "Business Stratagy",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
+    id: "2",
     iconName: "Website",
     title: "Website Development",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
+    id: "3",
     iconName: "Marketing",
     title: "Marketing & Reporting",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
+    id: "4",
     iconName: "App",
     title: "Mobile App Development",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
+    id: "5",
     iconName: "Marketing",
     title: "Marketing & Reporting",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
+    id: "6",
     iconName: "App",
     title: "Mobile App Development",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
 ];
-const Service = ({ setActiveTab }: Props) => {
+function Service({ setActiveTab }: Props) {
   return (
     <Section
       setActiveTab={setActiveTab}
@@ -51,9 +57,9 @@ const Service = ({ setActiveTab }: Props) => {
       description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
       Card={CardSectionService}
       items={items}
-      bgColor='black'
-    ></Section>
+      bgColor="black"
+    />
   );
-};
+}
 
 export default Service;

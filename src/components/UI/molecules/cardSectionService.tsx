@@ -2,7 +2,6 @@
 import tw from "twin.macro";
 import { css } from "@emotion/react";
 import Icon from "../atoms/icon";
-import { FC } from "react";
 import { CardProps } from "../../../types";
 
 const hoverStyles = css`
@@ -16,9 +15,8 @@ const hoverStyles = css`
     ${tw`sm:text-white`}
   }
 `;
-const CardSectionService :FC<CardProps>= ({ data} : CardProps) => {
+function CardSectionService({ data } : CardProps) {
   return (
-    <>
     <div
       css={[
         tw`py-7 px-3.5 w-full text-left rounded-xl bg-gradient-secondary sm:bg-primary sm:bg-none cursor-pointer `,
@@ -31,8 +29,7 @@ const CardSectionService :FC<CardProps>= ({ data} : CardProps) => {
         {data.description}
       </p>
     </div>
-    </>
   );
-};
+}
 
 export default CardSectionService;

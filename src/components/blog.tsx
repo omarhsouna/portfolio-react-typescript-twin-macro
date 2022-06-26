@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import tw from "twin.macro";
+import "twin.macro";
 import CardWithBackgroundImage from "./UI/molecules/cardWithBackgroundImage";
 import Section from "./UI/organisms/section";
+
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -43,20 +44,19 @@ const items = [
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
 ];
-const Blog = ({setActiveTab}: Props) => {
- 
+function Blog({ setActiveTab }: Props) {
   return (
     <Section
-    setActiveTab={setActiveTab}
-    activeTab="Blog"
-    subTitle="Latest News"
-    description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
-    Card={CardWithBackgroundImage}
-    items={items}
-    bgColor='black'
-    isCardBlog
-  ></Section>
-  )
+      setActiveTab={setActiveTab}
+      activeTab="Blog"
+      subTitle="Latest News"
+      description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
+      Card={CardWithBackgroundImage}
+      items={items}
+      bgColor="black"
+      isCardBlog
+    />
+  );
 }
 
 export default Blog;

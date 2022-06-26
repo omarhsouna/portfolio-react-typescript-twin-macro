@@ -1,12 +1,13 @@
-import icons from '../../icons'
+import icons from "../../icons";
+
 interface Props {
-    name: string;
+  name: string;
 }
-const Icon = ({name}:Props) => {
-    const SelectedIcon = icons[name as keyof typeof icons];
-    if (!SelectedIcon) return null;
+function Icon({ name }:Props) {
+  const SelectedIcon = icons[name as keyof typeof icons];
+  if (!SelectedIcon) return null;
 
-    return <SelectedIcon />;
+  return <SelectedIcon />;
 }
 
-export default Icon
+export default Icon;

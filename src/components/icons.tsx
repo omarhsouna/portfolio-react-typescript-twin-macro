@@ -10,16 +10,16 @@ import { ReactComponent as Hamburger } from "./icons/hamburger.svg";
 import { ReactComponent as Close } from "./icons/close.svg";
 
 const icons = {
-App,
-Marketing,
-Stratagy,
-Website,
-Facebook,
-LinkedIn, 
-Instagram,
-Twitter,
-Hamburger,
-Close
-}
+  App,
+  Marketing,
+  Stratagy,
+  Website,
+  Facebook,
+  LinkedIn,
+  Instagram,
+  Twitter,
+  Hamburger,
+  Close,
+};
 
-export default icons
+export default icons;

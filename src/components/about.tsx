@@ -1,11 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { MutableRefObject, useEffect, useRef, useState } from "react";
+import {
+  MutableRefObject, useEffect, useRef, useState,
+} from "react";
 import tw from "twin.macro";
-import useOnScreen  from "../hooks/useOnScreen";
-import Container from "./UI/atoms/container";
+import useOnScreen from "../hooks/useOnScreen";
 import Paragraph from "./UI/atoms/paragraph";
 import SubTitle from "./UI/atoms/subTitle";
 import Tab from "./UI/atoms/tab";
+
 const tabs = [
   "Main skills",
   "Awards",
@@ -22,19 +24,19 @@ const ContainerAbout = tw.div`py-16 md:py-32 px-3.5 mx-auto max-w-xs md:max-w-7x
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
 }
-const About = ({setActiveTab}: Props) => {
+function About({ setActiveTab }: Props) {
   const [activeTab, setactiveTab] = useState(0);
   const handleactiveTab = (tab: number) => setactiveTab(tab);
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
   const onScreen = useOnScreen(ref);
   useEffect(() => {
-    if(onScreen) {
-      setActiveTab('About');
+    if (onScreen) {
+      setActiveTab("About");
     }
   }, [onScreen]);
 
   return (
-    <div tw="bg-primary"  id="about">
+    <div tw="bg-primary" id="about">
       <ContainerAbout>
         <img
           tw="rounded-lg max-w-full mx-6"
@@ -43,15 +45,16 @@ const About = ({setActiveTab}: Props) => {
         />
 
         <div tw="pt-10">
-          <SubTitle title="About Me"></SubTitle>
+          <SubTitle title="About Me" />
           <Paragraph text="There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered in some form,
             by injected humour, or randomised words which dont look even
             slightly believable. If you are going to use a passage of Lorem
-            Ipsum" />
-            
-              <div
-              ref={ref}
+            Ipsum"
+          />
+
+          <div
+            ref={ref}
             css={{
               "a ~ a": {
                 marginRight: "30px",
@@ -80,6 +83,6 @@ const About = ({setActiveTab}: Props) => {
       </ContainerAbout>
     </div>
   );
-};
+}
 
 export default About;
