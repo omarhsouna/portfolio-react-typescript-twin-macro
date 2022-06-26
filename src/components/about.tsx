@@ -1,7 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import {
-  MutableRefObject, useEffect, useRef, useState,
-} from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import tw from "twin.macro";
 import useOnScreen from "../hooks/useOnScreen";
 import Paragraph from "./UI/atoms/paragraph";
@@ -46,7 +44,8 @@ function About({ setActiveTab }: Props) {
 
         <div tw="pt-10">
           <SubTitle title="About Me" />
-          <Paragraph text="There are many variations of passages of Lorem Ipsum available, but
+          <Paragraph
+            text="There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered in some form,
             by injected humour, or randomised words which dont look even
             slightly believable. If you are going to use a passage of Lorem
@@ -56,12 +55,8 @@ function About({ setActiveTab }: Props) {
           <div
             ref={ref}
             css={{
-              "a ~ a": {
-                marginRight: "30px",
-              },
-              "a:first-child": {
-                marginRight: "30px",
-              },
+              "a ~ a": { marginRight: "30px" },
+              "a:first-child": { marginRight: "30px" },
             }}
             tw="flex flex-wrap mb-5"
           >

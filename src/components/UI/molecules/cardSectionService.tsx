@@ -5,9 +5,9 @@ import Icon from "../atoms/icon";
 import { CardProps } from "../../../types";
 
 const hoverStyles = css`
-& > svg {
+  & > svg {
     ${tw`mb-6 text-white text-[54px] font-normal`}
-}
+  }
   &:hover {
     ${tw`sm:bg-gradient-secondary cursor-pointer sm:text-white sm:translate-y-[-5px]`}
   }
@@ -15,7 +15,7 @@ const hoverStyles = css`
     ${tw`sm:text-white`}
   }
 `;
-function CardSectionService({ data } : CardProps) {
+function CardSectionService({ data }: CardProps) {
   return (
     <div
       css={[

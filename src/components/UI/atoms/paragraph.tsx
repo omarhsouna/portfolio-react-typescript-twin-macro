@@ -2,9 +2,9 @@
 import "twin.macro";
 
 interface Props {
-  text:string ;
+  text: string;
 }
-function Paragraph({ text }:Props) {
+function Paragraph({ text }: Props) {
   return (
     <p tw="text-base md:text-lg leading-7 leading-8 font-light text-third mb-7">
       {text}

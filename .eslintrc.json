@@ -10,7 +10,7 @@
         "airbnb",
         "airbnb-typescript",
         "plugin:import/typescript",
-        "plugin:prttier/recommended"
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -26,6 +26,7 @@
         "@typescript-eslint",
         "prettier"
     ],
+    "ignorePatterns":["tailwind.config.js"],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "quotes":[
@@ -41,6 +42,7 @@
             {
                 "avoidEscape":true
             }
-        ]
+        ],
+       "object-curly-newline": 0
     }
 }

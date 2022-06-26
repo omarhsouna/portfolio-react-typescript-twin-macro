@@ -12,19 +12,25 @@ interface Props {
   activeTab: string;
   subTitle: string;
   description: string;
-  items:CardProps[];
+  items: CardProps[];
   Card: React.FC<CardProps>;
-  bgColor:"black" | "primary";
-  isCardBlog?:boolean;
+  bgColor: "black" | "primary";
+  isCardBlog?: boolean;
 }
-const styleWrapper = (bgColor:"black" | "primary") => ([
-  bgColor === "black"
-    ? tw`bg-black` : tw`bg-primary`,
-]);
+const styleWrapper = (bgColor: "black" | "primary") => [
+  bgColor === "black" ? tw`bg-black` : tw`bg-primary`,
+];
 
 function Section({
-  setActiveTab, activeTab, subTitle, description, Card, items, bgColor, isCardBlog,
-}:Props) {
+  setActiveTab,
+  activeTab,
+  subTitle,
+  description,
+  Card,
+  items,
+  bgColor,
+  isCardBlog,
+}: Props) {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
   const onScreen = useOnScreen(ref, "100px");
   useEffect(() => {
@@ -50,7 +56,5 @@ function Section({
     </div>
   );
 }
-Section.defaultProps = {
-  isCardBlog: false,
-};
+Section.defaultProps = { isCardBlog: false };
 export default Section;

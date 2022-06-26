@@ -10,7 +10,7 @@ const buttonVariants = {
 };
 const Button = styled.button(() => [
   tw`rounded  transition-all duration-300 text-white  hover:translate-y-[-3px]`,
-  ({ variant }:{ variant:ButtonVariants }) => buttonVariants[variant],
+  ({ variant }: { variant: ButtonVariants }) => buttonVariants[variant],
 ]);
 
 export default Button;

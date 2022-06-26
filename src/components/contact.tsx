@@ -15,7 +15,11 @@ function Contact({ setActiveTab }: Props) {
     <Container setActiveTab={setActiveTab} activeTab="Contact">
       <div tw="flex flex-col lg:flex-row-reverse  px-3.5">
         <div tw="lg:ml-8 lg:w-1/2">
-          <img alt="logo" tw="rounded-[5px] w-full   h-[306px] lg:h-[90%] lg:object-position[80%] mb-8 lg:mb-0 object-cover" src="/assets/images/cover.jpg" />
+          <img
+            alt="logo"
+            tw="rounded-[5px] w-full   h-[306px] lg:h-[90%] lg:object-position[80%] mb-8 lg:mb-0 object-cover"
+            src="/assets/images/cover.jpg"
+          />
         </div>
         <div tw="flex flex-col lg:w-1/2">
           <SubTitle title="Hire Me." />
@@ -28,9 +32,7 @@ function Contact({ setActiveTab }: Props) {
             <Button variant="fill">Submit</Button>
           </form>
         </div>
-
       </div>
-
     </Container>
   );
 }
