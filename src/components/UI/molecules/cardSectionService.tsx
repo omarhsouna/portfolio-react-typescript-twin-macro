@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import tw from "twin.macro";
 import { css } from "@emotion/react";
-import Icon from "../atoms/icon";
-import { CardProps } from "../../../types";
+import Icon from "components/UI/atoms/icon";
+import { CardProps } from "types";
 
 const hoverStyles = css`
   & > svg {

@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { MutableRefObject, useEffect, useRef, useState } from "react";
 import tw from "twin.macro";
-import useOnScreen from "../hooks/useOnScreen";
-import Paragraph from "./UI/atoms/paragraph";
-import SubTitle from "./UI/atoms/subTitle";
-import Tab from "./UI/atoms/tab";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
+import useOnScreen from "hooks/useOnScreen";
+import SubTitle from "components/UI/atoms/subTitle";
+import Paragraph from "components/UI/atoms/paragraph";
+import Tab from "components/UI/atoms/tab";
 
 const tabs = [
   "Main skills",

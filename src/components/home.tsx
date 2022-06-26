@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { MutableRefObject, useEffect, useRef } from "react";
 import "twin.macro";
-import useOnScreen from "../hooks/useOnScreen";
+import { MutableRefObject, useEffect, useRef } from "react";
+import useOnScreen from "hooks/useOnScreen";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;

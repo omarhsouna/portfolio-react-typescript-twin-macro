@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import "twin.macro";
 import React from "react";
-import Button from "./UI/atoms/button";
-import Container from "./UI/atoms/container";
-import Field from "./UI/atoms/field";
-import Paragraph from "./UI/atoms/paragraph";
-import SubTitle from "./UI/atoms/subTitle";
+import Container from "components/UI/atoms/container";
+import SubTitle from "components/UI/atoms/subTitle";
+import Paragraph from "components/UI/atoms/paragraph";
+import Field from "components/UI/atoms/field";
+import Button from "components/UI/atoms/button";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;

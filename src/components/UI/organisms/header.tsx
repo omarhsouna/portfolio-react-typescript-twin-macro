@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import styled from "@emotion/styled";
-import { MutableRefObject, useEffect, useRef, useState } from "react";
 import tw from "twin.macro";
-import useOnScreen from "../../../hooks/useOnScreen";
-import Icon from "../atoms/icon";
-import LinkIcon from "../atoms/linkIcon";
-import Tab from "../atoms/tab";
+import styled from "@emotion/styled";
+import Icon from "components/UI/atoms/icon";
+import LinkIcon from "components/UI/atoms/linkIcon";
+import Tab from "components/UI/atoms/tab";
+import useOnScreen from "hooks/useOnScreen";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 
 const Nav = styled.nav(({ isOpen }: { isOpen?: boolean }) => [
   tw`flex md:items-center flex-col md:flex-row h-screen  md:h-full md:ml-12 md:space-x-7 fixed z-10 md:relative top-0 py-14 md:p-0 px-5 w-[80vw] md:w-auto right-[-80vw] md:right-0 bg-primary md:bg-transparent duration-700 ease-out`, // Add base styles first

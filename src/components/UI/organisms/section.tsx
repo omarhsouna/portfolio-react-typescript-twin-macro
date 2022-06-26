@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import tw from "twin.macro";
 import { MutableRefObject, useEffect, useRef } from "react";
-import useOnScreen from "../../../hooks/useOnScreen";
-import GridItem from "../atoms/gridItem";
-import Paragraph from "../atoms/paragraph";
-import SubTitle from "../atoms/subTitle";
-import { CardProps } from "../../../types";
+import { CardProps } from "types";
+import useOnScreen from "hooks/useOnScreen";
+import SubTitle from "components/UI/atoms/subTitle";
+import Paragraph from "components/UI/atoms/paragraph";
+import GridItem from "components/UI/atoms/gridItem";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;

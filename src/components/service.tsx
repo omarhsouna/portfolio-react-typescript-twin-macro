@@ -1,5 +1,5 @@
-import CardSectionService from "./UI/molecules/cardSectionService";
-import Section from "./UI/organisms/section";
+import CardSectionService from "components/UI/molecules/cardSectionService";
+import Section from "components/UI/organisms/section";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;

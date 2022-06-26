@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import Header from "./components/UI/organisms/header";
-import Home from "./components/home";
-import About from "./components/about";
-import Service from "./components/service";
-import Portfolio from "./components/portfolio";
-import Blog from "./components/blog";
-import Contact from "./components/contact";
-import Footer from "./components/UI/organisms/footer";
+import { useState } from "react";
+import About from "components/about";
+import Blog from "components/blog";
+import Contact from "components/contact";
+import Home from "components/home";
+import Portfolio from "components/portfolio";
+import Service from "components/service";
+import Footer from "components/UI/organisms/footer";
+import Header from "components/UI/organisms/header";
 
 function App() {
   const tabs = ["Home", "About", "Service", "Portfolio", "Blog", "Contact"];

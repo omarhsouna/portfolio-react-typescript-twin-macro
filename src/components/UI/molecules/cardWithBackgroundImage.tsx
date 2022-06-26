@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import tw from "twin.macro";
 import { css } from "@emotion/react";
-import { CardProps } from "../../../types";
-import Button from "../atoms/button";
+import Button from "components/UI/atoms/button";
+import { CardProps } from "types";
 
 const stylesContentWrapper = (isCardBlog: boolean) => [
   tw`flex flex-col z-20 mt-auto relative`,
