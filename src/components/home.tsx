@@ -32,7 +32,6 @@ function Home({ setActiveTab }: Props) {
           <div tw="text-secondary">JS Developer.</div>
         </h1>
         <h2 tw="text-3xl md:text-[54px] text-white font-bold">
-          {" "}
           based in Tunisia.
         </h2>
       </div>
