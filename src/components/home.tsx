@@ -2,6 +2,7 @@
 import "twin.macro";
 import { MutableRefObject, useEffect, useRef } from "react";
 import useOnScreen from "hooks/useOnScreen";
+import AnimatedText from "components/UI/atoms/animatedText";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
@@ -27,9 +28,9 @@ function Home({ setActiveTab }: Props) {
           Welcome to my world
         </span>
         <h1 tw="text-white text-4xl md:text-[54px] leading-10 md:leading-[68px] font-black mb-5">
-          Hi, I&apos;m Omar Hsouna
+          <span>Hi, I&apos;m Omar Hsouna</span>
           <br />
-          <div tw="text-secondary">JS Developer.</div>
+          <AnimatedText />
         </h1>
         <h2 tw="text-3xl md:text-[54px] text-white font-bold">
           based in Tunisia.
