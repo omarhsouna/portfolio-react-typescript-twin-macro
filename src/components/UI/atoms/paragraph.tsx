@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import "twin.macro";
 
 interface Props {
   text: string;

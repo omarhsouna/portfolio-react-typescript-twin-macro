@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import Icon from "components/UI/atoms/icon";
 import LinkIcon from "components/UI/atoms/linkIcon";
-import "twin.macro";
 
 function Footer() {
   return (

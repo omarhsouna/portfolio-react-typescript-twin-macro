@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import "twin.macro";
+
 import { css } from "@emotion/react";
 
 const styles = css`

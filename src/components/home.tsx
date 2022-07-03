@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import "twin.macro";
+
 import { MutableRefObject, useEffect, useRef } from "react";
 import useOnScreen from "hooks/useOnScreen";
 import AnimatedText from "components/UI/atoms/animatedText";

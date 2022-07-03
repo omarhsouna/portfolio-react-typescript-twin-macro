@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import "twin.macro";
+
 import React from "react";
 import Container from "components/UI/atoms/container";
 import SubTitle from "components/UI/atoms/subTitle";

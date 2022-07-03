@@ -1,48 +1,44 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest":true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "react-app",
-        "react-app/jest",
-        "airbnb",
-        "airbnb-typescript",
-        "plugin:import/typescript",
-        "plugin:prettier/recommended"
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "ignorePatterns": ["tailwind.config.js", "config-overrides.js"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module",
-        "project": "./tsconfig.json"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint",
-        "prettier"
+    "@typescript-eslint/quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
     ],
-    "ignorePatterns":["tailwind.config.js"],
-    "rules": {
-        "react/react-in-jsx-scope": "off",
-        "quotes":[
-            "error",
-            "double",
-            {
-                "avoidEscape":true
-            }
-        ],
-        "@typescript-eslint/quotes":[
-            "error",
-            "double",
-            {
-                "avoidEscape":true
-            }
-        ],
-       "object-curly-newline": 0
-    }
+    "object-curly-newline": 0
+  }
 }

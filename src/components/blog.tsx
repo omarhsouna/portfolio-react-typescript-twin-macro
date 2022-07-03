@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import CardWithBackgroundImage from "components/UI/molecules/cardWithBackgroundImage";
 import Section from "components/UI/organisms/section";
-import "twin.macro";
 
 interface Props {
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
